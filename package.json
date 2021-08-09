@@ -1,0 +1,37 @@
+{
+  "name": "gulp-weapp-alias",
+  "version": "1.0.6",
+  "description": "Gulp plugin that lets you create custom aliases for wecaht weapp  with an @alias rule.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp --gulpfile examples/gulpfile.babel.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/echofly/gulp-weapp-alias.git"
+  },
+  "keywords": [
+    "gulp",
+    "wechat",
+    "weapp",
+    "miniprogram",
+    "alisa",
+    "path",
+    "src"
+  ],
+  "author": "echofly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/echofly/gulp-weapp-alias/issues"
+  },
+  "homepage": "https://github.com/echofly/gulp-weapp-alias#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "through2": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "less-import-aliases": "^1.0.2"
+  }
+}
