@@ -4,13 +4,13 @@
       src="https://upload.wikimedia.org/wikipedia/commons/7/72/Gulp.js_Logo.svg">
   </a>
   <h1>Gulp Weapp Alias</h1>
-  <p>Gulp plugin that lets you create custom aliases for wecaht weapp  with an @alias rule. Supports  `.wxml`, `.wxss(less|scss)`, `.js` and `.wxs` file.</p>
+  <p>Gulp plugin that lets you create custom aliases for wecaht weapp  with an <code>@alias</code> rule. Supports <code>.wxml</code>, <code>.wxss(less|scss)</code>, <code>.js</code> and <code>.wxs</code> file.</p>
 </div>
 
 <h2 align="center">Install</h2>
 
 ```bash
-  npm i --save-dev gulp-weapp-alias
+  npm i gulp-weapp-alias -D
 ```
 
 <!-- ```bash
@@ -36,18 +36,20 @@ function aliasTask() {
 
 the file before compilation
 
-```
+```js
 // .js
 import * as Utils from '@Aliases/utils/base';
 require('@Aliases/utils/base')
-
+```
+```less
 // .(wxss|less|scss)
 @import '@Aliases/style/reset.less';
 
 .bg {
   background-image: url('@Aliases/images/32821027.jpg');
 }
-
+```
+```html
 // .wxml
 <import src="@Aliases/wxs/index.wxs" />
 
@@ -57,18 +59,20 @@ require('@Aliases/utils/base')
 
 will become:
 
-```
+```js
 // .js
 import * as Utils from 'path/to/your/folder/utils/base';
 require('path/to/your/folder/utils/base')
-
+```
+```less
 // .(wxss|less|scss)
 @import 'path/to/your/folder/style/reset.less';
 
 .bg {
   background-image: url('path/to/your/folder/images/32821027.jpg');
 }
-
+```
+```html
 // .wxml
 <import src="path/to/your/folder/wxs/index.wxs" />
 
